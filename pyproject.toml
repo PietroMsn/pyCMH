@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycmh"
+version = "0.1.0"
+description = "Coordinates Manifold Harmonics for functional remeshing, in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy"]
+
+[project.optional-dependencies]
+# Coherent Point Drift on the hands (perform_functional_remeshing(cpd_on=True))
+cpd = ["pycpd", "libigl>=2.6"]
+# robust Laplacian and heat geodesics on the tufted cover (laplacian(kind='robust'), landmarks.heat_geodesics)
+robust = ["robust-laplacian", "potpourri3d"]
+plot = ["matplotlib"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["cmh"]
+
+[tool.setuptools.package-data]
+cmh = ["data/*.mat"]
