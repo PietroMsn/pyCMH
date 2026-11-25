@@ -1,5 +1,7 @@
 # pyCMH: Intrinsic/extrinsic embedding for functional remeshing of 3D shapes
 
+**[Project page](https://pietromsn.github.io/CMH/)**: abstract, figures, papers and BibTeX.
+
 Melzi, S. and Marin, R. and Musoni, P. and Bardon, F. and Tarini, M. and Castellani, U., C&G 2020
 
 Python implementation of [CMH](https://github.com/PietroMsn/CMH) (Coordinates Manifold Harmonics), the functional remeshing pipeline of the papers below: the geometry of one shape is transferred onto the connectivity of another.
